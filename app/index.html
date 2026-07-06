@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0b6e2d" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <title>Permit Bowl</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="home">
+  <!-- Home base -->
+  <section id="home">
+    <div class="home-card">
+      <div class="logo">🏈 PERMIT BOWL</div>
+      <div class="team-banner" id="home-team">HOME</div>
+      <div class="home-stats">
+        <div class="hs"><b id="home-ovr">40</b><span>QB OVR</span></div>
+        <div class="hs"><b id="home-streak">0🔥</b><span>day streak</span></div>
+        <div class="hs"><b id="home-record">0–0</b><span>record</span></div>
+      </div>
+      <button id="kickoff" class="hike">🏈 Kickoff</button>
+      <button id="open-roster" class="ghost-btn">📋 My Team</button>
+      <button id="open-locker" class="ghost-btn">🏪 Locker Room</button>
+      <button id="open-settings" class="ghost-btn">⚙️ Team settings</button>
+      <div id="settings" hidden>
+        <label class="fld">Team name
+          <input id="team-name" maxlength="14" placeholder="e.g. Buckeyes" autocomplete="off" />
+        </label>
+        <div class="swatch-label">Team color</div>
+        <div class="swatches" id="swatches"></div>
+        <button id="save-settings" class="hike">Save</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scoreboard -->
+  <header id="scoreboard">
+    <div class="team team-home">
+      <span class="abbr" id="home-abbr">HOME</span>
+      <span class="pts" id="home-score">0</span>
+    </div>
+    <div class="game-mid">
+      <div id="quarter">Q1</div>
+      <div id="possession" class="poss">🏈 YOUR BALL</div>
+    </div>
+    <div class="team team-away">
+      <span class="pts" id="away-score">0</span>
+      <span class="abbr" id="away-abbr">RIVALS</span>
+    </div>
+  </header>
+
+  <!-- Field -->
+  <section id="field">
+    <div class="endzone ez-home"><span id="ez-home-label">HOME</span></div>
+    <div class="turf" id="turf">
+      <div id="yardlines"></div>
+      <div id="firstdown" class="fd-line"></div>
+      <div id="fdtag" class="fd-tag">1ST</div>
+      <div id="los" class="los-line"></div>
+      <div id="downmarker" class="down-marker">1</div>
+      <div id="ball" class="ball">🏈</div>
+      <div id="fx" class="fx"></div>
+    </div>
+    <div class="endzone ez-away"><span id="ez-away-label">RIVALS</span></div>
+  </section>
+
+  <div id="statusbar">
+    <span id="downdist">1st &amp; 10</span>
+    <span id="spot">own 25</span>
+    <span class="ovr-mini"><b id="ovr">40</b> OVR</span>
+    <button id="end-game" class="end-btn">End</button>
+  </div>
+
+  <main id="stage"><p class="loading">Loading…</p></main>
+
+  <div id="summary" hidden>
+    <div class="summary-card">
+      <div id="summary-body"></div>
+      <button id="summary-close" class="hike">Play again ▶</button>
+    </div>
+  </div>
+
+  <div id="roster" hidden>
+    <div class="roster-card">
+      <div class="roster-head">
+        <span>📋 MY TEAM</span>
+        <span class="team-ovr"><b id="roster-ovr">40</b> OVR</span>
+      </div>
+      <p class="roster-sub">Master more rules and your players level up. ⭐ = maxed out.</p>
+      <div id="roster-list" class="roster-list"></div>
+      <button id="roster-close" class="hike">Back</button>
+    </div>
+  </div>
+
+  <div id="locker" hidden>
+    <div class="roster-card">
+      <div class="roster-head">
+        <span>🏪 LOCKER ROOM</span>
+        <span class="team-ovr">🪙 <b id="locker-tokens">0</b></span>
+      </div>
+      <p class="roster-sub">Spend tokens (1 per right answer) to upgrade your players. Bigger plays — but you still have to know the answer to gain.</p>
+      <div id="locker-list" class="roster-list"></div>
+      <button id="locker-close" class="hike">Back</button>
+    </div>
+  </div>
+
+  <script type="module" src="js/game.js"></script>
+</body>
+</html>

@@ -1,0 +1,2032 @@
+[
+  {
+    "id": "knowledge-test-pass-score",
+    "topic": "Getting Your License",
+    "difficulty": "easy",
+    "type": "mc",
+    "question": "What score do you need to pass the Ohio knowledge (permit) test?",
+    "options": [
+      "75%",
+      "60%",
+      "90%"
+    ],
+    "answer": "75%",
+    "explanation": "The knowledge test is 40 multiple-choice questions and you need 75% to pass.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 1 (Knowledge Testing)",
+      "page": 1,
+      "orc": null,
+      "quote": "The test is 40 multiple-choice questions (with a 75% passage rate needed)"
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "knowledge-test-retake-wait",
+    "topic": "Getting Your License",
+    "difficulty": "easy",
+    "type": "mc",
+    "question": "If you fail the knowledge test, how long must you wait before trying again?",
+    "options": [
+      "1 day",
+      "1 week",
+      "30 days"
+    ],
+    "answer": "1 day",
+    "explanation": "If you fail, you must wait one day before retesting; there's no limit on attempts but only one per day.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 1 (Knowledge Testing)",
+      "page": 1,
+      "orc": null,
+      "quote": "If you fail – You must wait one day before retesting."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "tipic-carry-always",
+    "topic": "Getting Your License",
+    "difficulty": "easy",
+    "type": "binary",
+    "question": "Must you carry your TIPIC (permit card) every time you drive?",
+    "options": [
+      "Yes, at all times",
+      "No, only for the test"
+    ],
+    "answer": "Yes, at all times",
+    "explanation": "Permit holders must carry the TIPIC at all times when driving.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 1 (TIPIC Restrictions)",
+      "page": 2,
+      "orc": "ORC 4507.05",
+      "quote": "Drivers must carry the TIPIC at all times when driving."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "tipic-under16-passenger",
+    "topic": "Getting Your License",
+    "difficulty": "medium",
+    "type": "mc",
+    "question": "On a permit and under 16, who must sit in the front passenger seat while you drive?",
+    "options": [
+      "A parent/guardian or licensed person age 21+",
+      "Any friend with a license",
+      "No one is required"
+    ],
+    "answer": "A parent/guardian or licensed person age 21+",
+    "explanation": "Under 16, a parent, guardian, custodian, licensed instructor, or a person 21+ acting in loco parentis must sit beside the permit holder.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 1 (TIPIC Restrictions)",
+      "page": 2,
+      "orc": "ORC 4507.05",
+      "quote": "If under age 16, the driver must have a parent, guardian, custodian, licensed driving instructor, or a person age 21 or older, who acts in loco parentis, occupying the front passenger seat beside the permit holder."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "tipic-occupants-belts",
+    "topic": "Getting Your License",
+    "difficulty": "medium",
+    "type": "binary",
+    "question": "On a permit, can you carry more people than there are safety belts?",
+    "options": [
+      "No — occupants can't exceed the number of belts",
+      "Yes, if they squeeze in"
+    ],
+    "answer": "No — occupants can't exceed the number of belts",
+    "explanation": "The total number of occupants cannot exceed the total number of safety belts installed in the vehicle.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 1 (TIPIC Restrictions)",
+      "page": 2,
+      "orc": "ORC 4507.05",
+      "quote": "Total number of occupants in the vehicle cannot exceed the total number of safety belts installed in the vehicle."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "driver-ed-50-hours",
+    "topic": "Getting Your License",
+    "difficulty": "medium",
+    "type": "mc",
+    "question": "Under 21, how many hours of supervised driving must you log (and how many at night)?",
+    "options": [
+      "50 hours, with 10 at night",
+      "20 hours, with 5 at night",
+      "100 hours, with 25 at night"
+    ],
+    "answer": "50 hours, with 10 at night",
+    "explanation": "You must complete and log 50 hours of driving with an eligible licensed driver, including at least 10 hours of night driving.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 1 (Driver Education Requirements Under 21)",
+      "page": 3,
+      "orc": null,
+      "quote": "Complete and log 50 hours of driving with an eligible licensed driver ... with at least 10 hours of night driving."
+    },
+    "verified": true,
+    "needs_human_review": false,
+    "human_verified": true
+  },
+  {
+    "id": "studded-tires-dates",
+    "topic": "Before You Drive",
+    "difficulty": "hard",
+    "type": "mc",
+    "question": "In Ohio, studded tires are legal during which window?",
+    "options": [
+      "November 1 through April 15",
+      "All year",
+      "December 1 through March 1"
+    ],
+    "answer": "November 1 through April 15",
+    "explanation": "In Ohio, studded tires are legal from November 1 through April 15.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 2 (Tire Safety)",
+      "page": 5,
+      "orc": null,
+      "quote": "In Ohio, studded tires are legal from November 1 through April 15."
+    },
+    "verified": true,
+    "needs_human_review": false,
+    "human_verified": true
+  },
+  {
+    "id": "headlights-when-on",
+    "topic": "Headlights & Signals",
+    "difficulty": "medium",
+    "type": "mc",
+    "question": "When does Ohio law require your headlights to be ON?",
+    "options": [
+      "Sunset to sunrise, in rain/snow/fog, and whenever wipers are on",
+      "Only when it's fully dark",
+      "Only on the highway"
+    ],
+    "answer": "Sunset to sunrise, in rain/snow/fog, and whenever wipers are on",
+    "explanation": "Headlights must be on from sunset to sunrise, during rain/snow/fog, and any time the wipers are in use because of precipitation.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 7 (When to Use Headlights)",
+      "page": 28,
+      "orc": "OAC 4501-15-01",
+      "quote": "Lights must be on: Between sunset and sunrise. During any period of rain, snow, fog ... Any time windshield wipers are in use because of precipitation."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "turn-signal-100ft",
+    "topic": "Headlights & Signals",
+    "difficulty": "medium",
+    "type": "mc",
+    "question": "How far before a turn must you signal?",
+    "options": [
+      "At least 100 feet",
+      "At least 25 feet",
+      "At least 500 feet"
+    ],
+    "answer": "At least 100 feet",
+    "explanation": "Activate your turn signal at least 100 feet before changing direction.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 5 (Turn Signal)",
+      "page": 17,
+      "orc": null,
+      "quote": "A turn signal must be given at least 100 feet before the intended turn."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "high-beams-dim",
+    "topic": "Headlights & Signals",
+    "difficulty": "easy",
+    "type": "binary",
+    "question": "Must you dim your high beams for oncoming traffic?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": "Yes",
+    "explanation": "Ohio law requires you to dim your high beam headlights for approaching traffic.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 7 (Night Driving)",
+      "page": 28,
+      "orc": null,
+      "quote": "Ohio law requires you to dim your high beam headlights for approaching traffic."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "seatbelt-required-front",
+    "topic": "Safety Restraints",
+    "difficulty": "easy",
+    "type": "binary",
+    "question": "In Ohio, must the driver and front-seat passengers wear a safety belt?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": "Yes",
+    "explanation": "Ohio's mandatory safety belt law requires drivers and front-seat occupants of most passenger vehicles to wear safety belts.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 2 (Safety Restraints)",
+      "page": 6,
+      "orc": "ORC 4513 / OAC 4501:2-1",
+      "quote": "Ohio's mandatory safety belt usage law requires drivers and front-seat occupants of most passenger vehicles to wear safety belts whenever they drive or ride in a motor vehicle on Ohio's roadways."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "under18-no-device",
+    "topic": "Be Alert",
+    "difficulty": "medium",
+    "type": "binary",
+    "question": "If you're under 18, can you use a phone hands-free while driving?",
+    "options": [
+      "No — no electronic device at all, even hands-free",
+      "Yes, hands-free is fine"
+    ],
+    "answer": "No — no electronic device at all, even hands-free",
+    "explanation": "Drivers under 18 may not use any electronic device while driving, even hands-free, even at a light or in a jam (navigation and emergency calls excepted).",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 3 (Distracted Driving)",
+      "page": 8,
+      "orc": null,
+      "quote": "Drivers Under Age 18 Years— It is illegal to use any electronic device while driving, even hands-free, or while sitting at a traffic light or in a traffic jam."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "bac-limit-08",
+    "topic": "Alcohol and the Law",
+    "difficulty": "hard",
+    "type": "mc",
+    "question": "A cop pulls you over. In Ohio, the legal BAC limit for a driver age 21 or older is…",
+    "options": [
+      ".05",
+      ".08",
+      ".10"
+    ],
+    "answer": ".08",
+    "explanation": "In Ohio it is illegal to drive with a BAC of .08% or higher (any age). It's lower for others: .04% for commercial drivers, .02% if under 21.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 6 (Alcohol and the Law)",
+      "page": 24,
+      "orc": null,
+      "quote": "it is against the law to operate a motor vehicle with a blood-alcohol concentration (BAC) of: .08% or higher at any age; .04% or higher for commercial drivers; .02% or higher when under the age 21."
+    },
+    "verified": true,
+    "needs_human_review": false,
+    "human_verified": true
+  },
+  {
+    "id": "bac-under21",
+    "topic": "Alcohol and the Law",
+    "difficulty": "hard",
+    "type": "mc",
+    "question": "If you are under 21, what BAC is already illegal in Ohio?",
+    "options": [
+      ".02 or higher",
+      ".08 or higher",
+      "Any amount is fine under .08"
+    ],
+    "answer": ".02 or higher",
+    "explanation": "For drivers under 21, a BAC of .02% or higher is illegal.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 6 (Alcohol and the Law)",
+      "page": 24,
+      "orc": null,
+      "quote": ".02% or higher when under the age 21"
+    },
+    "verified": true,
+    "needs_human_review": false,
+    "human_verified": true
+  },
+  {
+    "id": "speed-school-zone",
+    "topic": "Speed Limits",
+    "difficulty": "medium",
+    "type": "mc",
+    "question": "What is the typical speed limit in a school zone during restricted hours?",
+    "options": [
+      "20 mph",
+      "35 mph",
+      "15 mph"
+    ],
+    "answer": "20 mph",
+    "explanation": "School zones (during recess and while children arrive or leave during normal hours) carry a 20 mph limit in the manual's examples.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 4 (Speed Limits)",
+      "page": 9,
+      "orc": "ORC 4511.21",
+      "quote": "School Zones during recess and while children are arriving or leaving school during normal hours of operation",
+      "note": "The mph value is read from the speed-limit table graphic on p.9 (the numeric column did not survive text extraction); the road-type text above is verbatim."
+    },
+    "verified": true,
+    "needs_human_review": false,
+    "human_verified": true
+  },
+  {
+    "id": "speed-municipal-street",
+    "topic": "Speed Limits",
+    "difficulty": "medium",
+    "type": "mc",
+    "question": "What is the example speed limit for streets within a municipal corporation?",
+    "options": [
+      "25 mph",
+      "35 mph",
+      "45 mph"
+    ],
+    "answer": "25 mph",
+    "explanation": "Streets within a municipal corporation carry a 25 mph limit in the manual's examples.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 4 (Speed Limits)",
+      "page": 9,
+      "orc": "ORC 4511.21",
+      "quote": "Streets within a municipal corporation",
+      "note": "The mph value is read from the speed-limit table graphic on p.9 (the numeric column did not survive text extraction); the road-type text above is verbatim."
+    },
+    "verified": true,
+    "needs_human_review": false,
+    "human_verified": true
+  },
+  {
+    "id": "speed-rural-freeway",
+    "topic": "Speed Limits",
+    "difficulty": "medium",
+    "type": "mc",
+    "question": "What is the example speed limit on rural freeways?",
+    "options": [
+      "70 mph",
+      "55 mph",
+      "65 mph"
+    ],
+    "answer": "70 mph",
+    "explanation": "Rural freeways carry a 70 mph limit in the manual's examples.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 4 (Speed Limits)",
+      "page": 9,
+      "orc": "ORC 4511.21",
+      "quote": "Rural freeways",
+      "note": "The mph value is read from the speed-limit table graphic on p.9 (the numeric column did not survive text extraction); the road-type text above is verbatim."
+    },
+    "verified": true,
+    "needs_human_review": false,
+    "human_verified": true
+  },
+  {
+    "id": "speed-alley",
+    "topic": "Speed Limits",
+    "difficulty": "hard",
+    "type": "mc",
+    "question": "What is the example speed limit in an alley within a municipality?",
+    "options": [
+      "15 mph",
+      "25 mph",
+      "20 mph"
+    ],
+    "answer": "15 mph",
+    "explanation": "Alleys within a municipal corporation carry a 15 mph limit in the manual's examples.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 4 (Speed Limits)",
+      "page": 9,
+      "orc": "ORC 4511.21",
+      "quote": "Alleys within a municipal corporation",
+      "note": "The mph value is read from the speed-limit table graphic on p.9 (the numeric column did not survive text extraction); the road-type text above is verbatim."
+    },
+    "verified": true,
+    "needs_human_review": false,
+    "human_verified": true
+  },
+  {
+    "id": "four-way-stop-yield-right",
+    "topic": "Right-of-Way",
+    "difficulty": "medium",
+    "type": "mc",
+    "question": "You and another car reach a four-way stop at the exact same time, side by side. Who has the right-of-way?",
+    "options": [
+      "The driver on the right",
+      "The driver on the left",
+      "Whoever honks first"
+    ],
+    "answer": "The driver on the right",
+    "explanation": "At a four-way intersection, if you arrive at the same time, yield to the driver on your right.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 4 (Right-of-Way)",
+      "page": 10,
+      "orc": null,
+      "quote": "The driver on your right at a four-way intersection if both of you arrive at the intersection at the same time."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "left-turn-yield-oncoming",
+    "topic": "Right-of-Way",
+    "difficulty": "medium",
+    "type": "binary",
+    "question": "You're making a left turn and cars are coming straight at you in the opposing lane. Who goes first?",
+    "options": [
+      "Oncoming traffic — you yield",
+      "You go, you're already turning"
+    ],
+    "answer": "Oncoming traffic — you yield",
+    "explanation": "When making a left turn you must yield to drivers in the opposing traffic lane.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 4 (Right-of-Way)",
+      "page": 10,
+      "orc": null,
+      "quote": "Drivers in the opposing traffic lane when you are making a left turn."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "yield-entering-from-driveway",
+    "topic": "Right-of-Way",
+    "difficulty": "medium",
+    "type": "binary",
+    "question": "You're pulling onto a public road from a driveway. Do you yield to traffic already on the road?",
+    "options": [
+      "Yes",
+      "No, they yield to you"
+    ],
+    "answer": "Yes",
+    "explanation": "You must yield to drivers on a public highway when entering from a driveway or private road.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 4 (Right-of-Way)",
+      "page": 10,
+      "orc": null,
+      "quote": "Drivers on a public highway if you are entering the highway from a driveway or a private road."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "red-light-stop",
+    "topic": "Traffic Signals",
+    "difficulty": "easy",
+    "type": "binary",
+    "question": "The traffic light ahead is a steady RED. What do you do?",
+    "options": [
+      "Stop",
+      "Go"
+    ],
+    "answer": "Stop",
+    "explanation": "A red light means stop before entering the intersection. Wait behind the stop line, crosswalk, or intersection until it turns green.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 4 (Traffic Signals)",
+      "page": 10,
+      "orc": "ORC 4511.13",
+      "quote": "A red traffic light means stop before entering the intersection. You must wait behind the stop line, crosswalk, or intersection until the traffic light turns green."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "green-light-go",
+    "topic": "Traffic Signals",
+    "difficulty": "easy",
+    "type": "mc",
+    "question": "The light is steady GREEN and the intersection is clear. What does green mean?",
+    "options": [
+      "Travel through with caution if it's clear",
+      "Stop and wait",
+      "Speed up to beat the light"
+    ],
+    "answer": "Travel through with caution if it's clear",
+    "explanation": "A green light means you may travel with caution through the intersection if it is clear to do so.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 4 (Traffic Signals)",
+      "page": 10,
+      "orc": "ORC 4511.13",
+      "quote": "A green traffic light means you may travel with caution through the intersection if it is clear to do so."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "yellow-light-prepare-stop",
+    "topic": "Traffic Signals",
+    "difficulty": "easy",
+    "type": "mc",
+    "question": "The light turns steady YELLOW. What is it telling you?",
+    "options": [
+      "It's about to turn red — use caution and prepare to stop",
+      "Speed up, you have plenty of time",
+      "It means go"
+    ],
+    "answer": "It's about to turn red — use caution and prepare to stop",
+    "explanation": "A yellow light indicates the signal is about to change to red. Use caution and prepare to stop.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 4 (Traffic Signals)",
+      "page": 10,
+      "orc": "ORC 4511.13",
+      "quote": "A yellow traffic light indicates the color is about to change to red; use caution. Prepare to stop."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "flashing-red-full-stop",
+    "topic": "Traffic Signals",
+    "difficulty": "medium",
+    "type": "binary",
+    "question": "You reach a FLASHING RED traffic signal. What do you do?",
+    "options": [
+      "Come to a complete stop, then go when clear",
+      "Slow down but keep rolling"
+    ],
+    "answer": "Come to a complete stop, then go when clear",
+    "explanation": "A flashing red light means stop completely — like a stop sign — and make sure no traffic is crossing your path before entering.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 4 (Traffic Signals — Flashing Red)",
+      "page": 10,
+      "orc": "ORC 4511.13",
+      "quote": "Stop behind a stop line, crosswalk, or intersection before entering and come to a complete stop. Be sure no traffic is traveling across your path of travel before entering the intersection."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "inoperable-light-treat-as-stop-sign",
+    "topic": "Traffic Signals",
+    "difficulty": "medium",
+    "type": "mc",
+    "question": "The traffic light at the intersection is completely dead — no lights at all. How do you treat it?",
+    "options": [
+      "Like a four-way stop",
+      "Like a green light",
+      "Drive straight through"
+    ],
+    "answer": "Like a four-way stop",
+    "explanation": "When a signal is dark (power outage) and no officer is directing traffic, treat it as a four-way stop.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 10 (Inoperable Traffic Signals)",
+      "page": 39,
+      "orc": null,
+      "quote": "drivers must treat the non-working traffic signal as a four-way stop."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "stop-sign-must-stop",
+    "topic": "Traffic Signs",
+    "difficulty": "easy",
+    "type": "binary",
+    "question": "You roll up to a STOP sign. What do you do?",
+    "options": [
+      "Come to a full stop",
+      "Slow down and roll through"
+    ],
+    "answer": "Come to a full stop",
+    "explanation": "At a stop sign you must come to a complete stop behind the stop line or crosswalk before entering the intersection.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 5 (Stopping the Vehicle)",
+      "page": 15,
+      "orc": null,
+      "quote": "A driver must stop: Behind the stop line or crosswalk at any stop sign or red traffic signal before entering an intersection."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "stop-sign-shape",
+    "topic": "Traffic Signs",
+    "difficulty": "easy",
+    "type": "mc",
+    "question": "What shape and color is a STOP sign?",
+    "options": [
+      "Red octagon (8 sides)",
+      "Yellow diamond",
+      "White rectangle"
+    ],
+    "answer": "Red octagon (8 sides)",
+    "explanation": "The STOP sign is the red eight-sided (octagon) regulatory sign meaning all traffic must stop before proceeding.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 4 (Traffic Signs — Regulatory)",
+      "page": 11,
+      "orc": null,
+      "quote": "ALL TRAFFIC IN THIS LANE MUST STOP BEFORE PROCEEDING",
+      "note": "Shape/color (red octagon) is per the regulatory STOP sign shown on p.11; the manual text does not describe sign geometry."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "yield-sign-meaning",
+    "topic": "Traffic Signs",
+    "difficulty": "easy",
+    "type": "mc",
+    "question": "What does a downward-pointing triangular YIELD sign tell you to do?",
+    "options": [
+      "Slow/stop if needed and yield to other traffic",
+      "Come to a full stop every time",
+      "You always have the right-of-way"
+    ],
+    "answer": "Slow/stop if needed and yield to other traffic",
+    "explanation": "A yield sign means stop only if other traffic is affected, and yield to all oncoming traffic.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 4 (Traffic Signs — Regulatory)",
+      "page": 11,
+      "orc": null,
+      "quote": "STOP ONLY IF OTHER TRAFFIC IS AFFECTED; YIELD TO ALL ONCOMING TRAFFIC"
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "warning-sign-shape-color",
+    "topic": "Traffic Signs",
+    "difficulty": "easy",
+    "type": "mc",
+    "question": "What color and shape are most WARNING signs (danger ahead)?",
+    "options": [
+      "Yellow diamond",
+      "Red octagon",
+      "Green rectangle"
+    ],
+    "answer": "Yellow diamond",
+    "explanation": "Warning signs tell of possible danger ahead and are usually yellow, diamond-shaped, with black lettering or symbols.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 4 (Traffic Signs — Warning)",
+      "page": 11,
+      "orc": null,
+      "quote": "Warning Signs tell a driver of possible danger that might be ahead. The signs are usually yellow with black lettering or symbols and are diamond shaped."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "work-zone-sign-color",
+    "topic": "Traffic Signs",
+    "difficulty": "easy",
+    "type": "mc",
+    "question": "What color background do WORK ZONE (construction) signs have?",
+    "options": [
+      "Orange",
+      "Yellow",
+      "Blue"
+    ],
+    "answer": "Orange",
+    "explanation": "Work zone signs have a distinctive orange background with black letters or symbols.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 4 (Work Zone Signs)",
+      "page": 12,
+      "orc": null,
+      "quote": "Work Zone Signs: These signs generally have a distinctive orange background."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "sign-id-stop",
+    "topic": "Traffic Signs",
+    "difficulty": "easy",
+    "type": "mc",
+    "question": "What does this sign mean?",
+    "image": "assets/signs/stop.png",
+    "options": [
+      "Come to a complete stop",
+      "Yield",
+      "No entry"
+    ],
+    "answer": "Come to a complete stop",
+    "explanation": "A red octagon is a STOP sign — come to a complete stop before the line/crosswalk.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 4 (Traffic Signs — Regulatory)",
+      "page": 11,
+      "orc": null,
+      "quote": "ALL TRAFFIC IN THIS LANE MUST STOP BEFORE PROCEEDING",
+      "note": "Shape/color (red octagon) is per the regulatory STOP sign shown on p.11; the manual text does not describe sign geometry."
+    },
+    "verified": true,
+    "needs_human_review": false,
+    "needs_asset": false
+  },
+  {
+    "id": "sign-id-do-not-enter",
+    "topic": "Traffic Signs",
+    "difficulty": "medium",
+    "type": "mc",
+    "question": "What does this sign mean?",
+    "image": "assets/signs/do-not-enter.png",
+    "options": [
+      "Do not enter / wrong way",
+      "One way",
+      "No parking"
+    ],
+    "answer": "Do not enter / wrong way",
+    "explanation": "Used at intersections of one-way roads and freeway exit ramps to indicate you must not enter (wrong way).",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 4 (Traffic Signs — Regulatory)",
+      "page": 11,
+      "orc": null,
+      "quote": "USED AT INTERSECTIONS OF ONE-WAY ROADS, & FREEWAY EXIT RAMPS"
+    },
+    "verified": true,
+    "needs_human_review": false,
+    "needs_asset": false
+  },
+  {
+    "id": "sign-id-railroad",
+    "topic": "Traffic Signs",
+    "difficulty": "medium",
+    "type": "mc",
+    "question": "What does this sign mean?",
+    "image": "assets/signs/railroad-crossing.png",
+    "options": [
+      "Railroad crossing ahead",
+      "Hospital ahead",
+      "Road work ahead"
+    ],
+    "answer": "Railroad crossing ahead",
+    "explanation": "A round yellow sign with an X and 'RR' warns of a highway-railroad grade crossing ahead — slow down and be ready to stop.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 5 (Railroad Crossings)",
+      "page": 21,
+      "orc": null,
+      "quote": "A round, yellow warning sign with an “X” symbol and “RR” letters ... indicates a highway-railroad grade crossing."
+    },
+    "verified": true,
+    "needs_human_review": false,
+    "needs_asset": false
+  },
+  {
+    "id": "white-lines-meaning",
+    "topic": "Lane Markings",
+    "difficulty": "medium",
+    "type": "mc",
+    "question": "What do WHITE lane lines separate?",
+    "options": [
+      "Traffic going the same direction",
+      "Traffic going opposite directions",
+      "The road from the shoulder only"
+    ],
+    "answer": "Traffic going the same direction",
+    "explanation": "White lines separate traffic traveling in the same direction; they may be solid or broken (dashed).",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 4 (Lane Pavement Markings)",
+      "page": 13,
+      "orc": null,
+      "quote": "WHITE LINES: Separates traffic traveling in the same direction."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "solid-yellow-meaning",
+    "topic": "Lane Markings",
+    "difficulty": "medium",
+    "type": "mc",
+    "question": "What does a solid YELLOW line separate?",
+    "options": [
+      "Traffic going opposite directions",
+      "Traffic going the same direction",
+      "Bike lanes only"
+    ],
+    "answer": "Traffic going opposite directions",
+    "explanation": "A yellow solid line separates traffic traveling in opposite directions.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 4 (Lane Pavement Markings)",
+      "page": 13,
+      "orc": null,
+      "quote": "YELLOW SOLID LINE: Separates traffic traveling in opposite directions."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "double-yellow-no-pass",
+    "topic": "Lane Markings",
+    "difficulty": "medium",
+    "type": "binary",
+    "question": "There's a solid DOUBLE YELLOW line down the center. Can you pass across it?",
+    "options": [
+      "No — passing is prohibited from both directions",
+      "Yes, if no one is coming"
+    ],
+    "answer": "No — passing is prohibited from both directions",
+    "explanation": "Passing is prohibited from both directions at a solid double-yellow line; you may only cross to turn left into a driveway or pass a slow-moving vehicle when safe.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 5 (Passing)",
+      "page": 20,
+      "orc": null,
+      "quote": "Passing is prohibited from both directions when there is a solid double-yellow line in the center of the road."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "broken-yellow-pass",
+    "topic": "Lane Markings",
+    "difficulty": "medium",
+    "type": "binary",
+    "question": "The yellow center line on your side is BROKEN (dashed). May you pass when it's safe?",
+    "options": [
+      "Yes — passing is allowed from the broken-line side",
+      "No, yellow always means no passing"
+    ],
+    "answer": "Yes — passing is allowed from the broken-line side",
+    "explanation": "You can pass only when the broken yellow line is on your side; passing is prohibited when the solid yellow line is in your lane.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 5 (Passing Zone)",
+      "page": 20,
+      "orc": null,
+      "quote": "Passing is prohibited when the solid yellow line is in your lane. You can only pass when the broken yellow line is in your lane."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "two-way-left-turn-lane",
+    "topic": "Lane Markings",
+    "difficulty": "medium",
+    "type": "binary",
+    "question": "A center lane marked with a broken + solid yellow line on each side is for traveling and passing. True or false?",
+    "options": [
+      "False — it's for left turns only",
+      "True"
+    ],
+    "answer": "False — it's for left turns only",
+    "explanation": "A two-way left turn lane is for left turns only from either direction — not for traveling or passing.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 4 (Two-Way Left Turn Only Lane)",
+      "page": 14,
+      "orc": null,
+      "quote": "The marked center lane is for left turns only. ... This is not a lane used for traveling or passing."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "crosswalk-yield-peds",
+    "topic": "Crosswalks",
+    "difficulty": "easy",
+    "type": "binary",
+    "question": "A pedestrian is in the crosswalk ahead. Must you yield?",
+    "options": [
+      "Yes",
+      "No, you have the road"
+    ],
+    "answer": "Yes",
+    "explanation": "You must yield the right-of-way to pedestrians entering or in a crosswalk.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 4 (Crosswalks)",
+      "page": 14,
+      "orc": null,
+      "quote": "You must yield the right-of-way to pedestrians entering or in a crosswalk."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "right-turn-on-red",
+    "topic": "Turning",
+    "difficulty": "medium",
+    "type": "mc",
+    "question": "Can you turn right on a red light in Ohio?",
+    "options": [
+      "Yes — after a full stop and yielding, unless a sign prohibits it",
+      "Never",
+      "Yes, without stopping"
+    ],
+    "answer": "Yes — after a full stop and yielding, unless a sign prohibits it",
+    "explanation": "You may turn right on red unless a sign prohibits it, but only after coming to a complete stop and letting all crossing traffic and pedestrians clear.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 5 (Turning on a Red Traffic Signal)",
+      "page": 17,
+      "orc": null,
+      "quote": "You may turn right at a red traffic signal, unless a sign specifically prohibits it. When making a right turn on red, you must come to a complete stop and allow all crossing traffic and all pedestrians to clear the intersection before you proceed."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "left-turn-on-red",
+    "topic": "Turning",
+    "difficulty": "hard",
+    "type": "mc",
+    "question": "When may you turn LEFT on a red light in Ohio?",
+    "options": [
+      "Only from a one-way street onto another one-way street",
+      "Never",
+      "Any time after stopping"
+    ],
+    "answer": "Only from a one-way street onto another one-way street",
+    "explanation": "A left turn on red is allowed only from the extreme left lane of a one-way street onto another one-way street, unless a sign forbids it.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 5 (Turning on a Red Traffic Signal)",
+      "page": 17,
+      "orc": null,
+      "quote": "You may turn left at a red traffic signal, only from the extreme left lane of a one-way street onto another one-way street, unless the intersection has a sign posted forbidding a left turn on red."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "roundabout-yield-to-circulating",
+    "topic": "Roundabouts",
+    "difficulty": "medium",
+    "type": "mc",
+    "question": "You're about to enter a roundabout. Who has the right-of-way?",
+    "options": [
+      "Traffic already in the roundabout",
+      "You do, because you're entering",
+      "Whoever is going faster"
+    ],
+    "answer": "Traffic already in the roundabout",
+    "explanation": "Slow down and yield to traffic already circulating; enter counterclockwise and keep moving once you're in.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 5 (Roundabouts or Traffic Circles)",
+      "page": 18,
+      "orc": null,
+      "quote": "Yield to the traffic already in the roundabout or traffic circle."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "roundabout-direction",
+    "topic": "Roundabouts",
+    "difficulty": "easy",
+    "type": "mc",
+    "question": "Which direction do you travel in a roundabout?",
+    "options": [
+      "Counterclockwise",
+      "Clockwise",
+      "Whichever is shorter"
+    ],
+    "answer": "Counterclockwise",
+    "explanation": "Vehicles travel counterclockwise around the center island of a roundabout.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 5 (Roundabouts or Traffic Circles)",
+      "page": 18,
+      "orc": null,
+      "quote": "Enter a roundabout or traffic circle in a counterclockwise direction."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "drive-right-half",
+    "topic": "Lane Travel",
+    "difficulty": "easy",
+    "type": "binary",
+    "question": "As a rule, should you drive on the right half of the roadway?",
+    "options": [
+      "Yes (except when passing, one-way, etc.)",
+      "No, the left is fine"
+    ],
+    "answer": "Yes (except when passing, one-way, etc.)",
+    "explanation": "Drive on the right half of the roadway except when overtaking/passing, on a one-way road, on a 3+ lane road, or when directed otherwise.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 5 (Lane Travel)",
+      "page": 18,
+      "orc": null,
+      "quote": "Drive on the right half of the roadway except when: Overtaking and passing another vehicle proceeding in the same direction."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "no-pass-situations",
+    "topic": "Passing",
+    "difficulty": "medium",
+    "type": "mc",
+    "question": "Which of these is a place you must NOT pass?",
+    "options": [
+      "On a curve or hill where your view is blocked",
+      "On a straight, clear road",
+      "When the dashed line is on your side"
+    ],
+    "answer": "On a curve or hill where your view is blocked",
+    "explanation": "Do not pass when your view is blocked by a curve or hill, when oncoming traffic is approaching, at intersections, or before a railroad crossing or bridge.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 5 (Passing)",
+      "page": 20,
+      "orc": null,
+      "quote": "Do not attempt to pass when: An oncoming vehicle is approaching. Your view is blocked by a curve or a hill. At intersections. Before a highway-railroad crossing or bridge."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "no-pass-on-shoulder",
+    "topic": "Passing",
+    "difficulty": "easy",
+    "type": "binary",
+    "question": "Can you pass another vehicle by driving on the shoulder?",
+    "options": [
+      "No, never",
+      "Yes, if it's paved"
+    ],
+    "answer": "No, never",
+    "explanation": "Never pass on the shoulder, whether it is paved or not.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 5 (Multi-Lane, Two-way Roadway)",
+      "page": 20,
+      "orc": null,
+      "quote": "Never pass on the shoulder, whether it is paved or not."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "railroad-stop-distance",
+    "topic": "Railroad Crossings",
+    "difficulty": "hard",
+    "type": "mc",
+    "question": "When a train is approaching, where must you stop at a railroad crossing?",
+    "options": [
+      "No closer than 15 feet and no farther than 50 feet",
+      "Right at the tracks",
+      "At least 100 feet back"
+    ],
+    "answer": "No closer than 15 feet and no farther than 50 feet",
+    "explanation": "Stop no closer than 15 feet and no farther than 50 feet from the crossing when a train is approaching.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 5 (Railroad Crossings)",
+      "page": 21,
+      "orc": null,
+      "quote": "Stop no closer than 15 feet and no farther than 50 feet from the crossing when a train is approaching."
+    },
+    "verified": true,
+    "needs_human_review": false,
+    "human_verified": true
+  },
+  {
+    "id": "school-bus-red-lights",
+    "topic": "School Buses",
+    "difficulty": "medium",
+    "type": "binary",
+    "question": "A school bus ahead has its red lights flashing and stop arm out. Must you stop?",
+    "options": [
+      "Yes",
+      "No, just slow down"
+    ],
+    "answer": "Yes",
+    "explanation": "You must stop for a school bus with flashing red lights that is loading or unloading children (rules differ by road width).",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 5 (Stopping for a School Bus)",
+      "page": 22,
+      "orc": "ORC 4511.75",
+      "quote": "A driver must stop for a school bus when the school bus is dropping off or picking up students."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "school-bus-distance",
+    "topic": "School Buses",
+    "difficulty": "hard",
+    "type": "mc",
+    "question": "On a road with fewer than four lanes, how far must you stop from a school bus with red lights flashing?",
+    "options": [
+      "At least 10 feet",
+      "At least 3 feet",
+      "Right at the bumper"
+    ],
+    "answer": "At least 10 feet",
+    "explanation": "On a road with fewer than four lanes, all traffic from both directions must stop at least 10 feet from the front or rear of the bus.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 5 (Stopping for a School Bus)",
+      "page": 22,
+      "orc": "ORC 4511.75",
+      "quote": "all traffic approaching the bus from either direction must stop at least 10 feet from the front or rear of the bus"
+    },
+    "verified": true,
+    "needs_human_review": false,
+    "human_verified": true
+  },
+  {
+    "id": "parking-curb-distance",
+    "topic": "Parking",
+    "difficulty": "hard",
+    "type": "mc",
+    "question": "How close to the curb must you park?",
+    "options": [
+      "Within 12 inches",
+      "Within 3 feet",
+      "Within 6 inches"
+    ],
+    "answer": "Within 12 inches",
+    "explanation": "Park parallel to and not more than 12 inches from the curb, facing the direction of traffic.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 5 (Parking)",
+      "page": 23,
+      "orc": null,
+      "quote": "parallel to and not more than 12 inches from the right curb"
+    },
+    "verified": true,
+    "needs_human_review": false,
+    "human_verified": true
+  },
+  {
+    "id": "parking-near-hydrant",
+    "topic": "Parking",
+    "difficulty": "hard",
+    "type": "mc",
+    "question": "You may not park within how many feet of a fire hydrant?",
+    "options": [
+      "10 feet",
+      "3 feet",
+      "25 feet"
+    ],
+    "answer": "10 feet",
+    "explanation": "No parking within 10 feet of a fire hydrant (and within 20 feet of an intersection or crosswalk).",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 5 (Stopping, Parking, or Standing Prohibited)",
+      "page": 23,
+      "orc": "ORC 4511.68",
+      "quote": "Within 10 feet of a fire hydrant"
+    },
+    "verified": true,
+    "needs_human_review": false,
+    "human_verified": true
+  },
+  {
+    "id": "parking-on-hill",
+    "topic": "Parking",
+    "difficulty": "medium",
+    "type": "mc",
+    "question": "When parking on a hill, which way do you turn your front wheels?",
+    "options": [
+      "Toward the curb",
+      "Straight ahead",
+      "Away from the curb"
+    ],
+    "answer": "Toward the curb",
+    "explanation": "Turn the front wheels toward the curb-side of the road to stabilize the vehicle, set the parking brake, and shift to PARK.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 5 (Parking on a Hill or Grade)",
+      "page": 23,
+      "orc": null,
+      "quote": "turn the front wheels toward the curb-side of the road to stabilize the vehicle"
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "insurance-required",
+    "topic": "Insurance & Penalties",
+    "difficulty": "easy",
+    "type": "binary",
+    "question": "Is it legal to drive in Ohio without insurance?",
+    "options": [
+      "No",
+      "Yes, if you're careful"
+    ],
+    "answer": "No",
+    "explanation": "In Ohio it is illegal to drive any motor vehicle without insurance (financial responsibility).",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 6 (Insurance — Financial Responsibility)",
+      "page": 24,
+      "orc": "ORC 4509.101",
+      "quote": "In Ohio, it is illegal to drive any motor vehicle without insurance"
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "points-12-suspension",
+    "topic": "Insurance & Penalties",
+    "difficulty": "hard",
+    "type": "mc",
+    "question": "How many points in a two-year period triggers a license suspension?",
+    "options": [
+      "12 or more",
+      "6 or more",
+      "20 or more"
+    ],
+    "answer": "12 or more",
+    "explanation": "12 or more points in a two-year period results in a 12-point suspension (6 points triggers only a warning letter).",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 6 (Penalties)",
+      "page": 26,
+      "orc": null,
+      "quote": "If a driver accumulates 12 or more points within a two-year period, the BMV will impose a 12-point suspension of the Driver License."
+    },
+    "verified": true,
+    "needs_human_review": false,
+    "human_verified": true
+  },
+  {
+    "id": "child-restraint-backseat",
+    "topic": "Child Passenger Safety",
+    "difficulty": "medium",
+    "type": "mc",
+    "question": "Children of what age should ride in the back seat to avoid airbag injury?",
+    "options": [
+      "Age 12 and younger",
+      "Age 8 and younger",
+      "Age 16 and younger"
+    ],
+    "answer": "Age 12 and younger",
+    "explanation": "Children age 12 and younger should sit in the rear seat to avoid injury from an airbag in a crash.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 6 (Child Passenger Restraints)",
+      "page": 27,
+      "orc": "ORC 4511.81",
+      "quote": "Children age 12 and younger should sit in the rear seat of the vehicle to avoid injury from an air bag"
+    },
+    "verified": true,
+    "needs_human_review": false,
+    "human_verified": true
+  },
+  {
+    "id": "police-stop-pull-right",
+    "topic": "Special Driving Situations",
+    "difficulty": "easy",
+    "type": "mc",
+    "question": "An officer signals you to pull over. What should you do?",
+    "options": [
+      "Signal and pull over on the right side, stay in the car",
+      "Stop in your lane immediately",
+      "Get out and walk back to the officer"
+    ],
+    "answer": "Signal and pull over on the right side, stay in the car",
+    "explanation": "Activate your turn signal, pull over on the right (or nearest safe spot), put it in park, and remain in the vehicle with hands visible unless told otherwise.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 7 (Police and Traffic Stops)",
+      "page": 28,
+      "orc": null,
+      "quote": "pull over on the right side of the roadway ... Lower the window and remain in the vehicle unless told otherwise by the officer."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "fog-use-low-beams",
+    "topic": "Special Driving Situations",
+    "difficulty": "medium",
+    "type": "mc",
+    "question": "In fog, which headlights should you use?",
+    "options": [
+      "Low beams",
+      "High beams",
+      "No headlights"
+    ],
+    "answer": "Low beams",
+    "explanation": "In fog, slow down and use low beam headlights (not high beams), and keep scanning for hazards.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 7 (Driving in Fog)",
+      "page": 29,
+      "orc": null,
+      "quote": "Use low beam headlights (not high beam lights) and keep scanning the area for any potential hazards."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "skid-steer-into-it",
+    "topic": "Special Driving Situations",
+    "difficulty": "medium",
+    "type": "mc",
+    "question": "Your vehicle starts to skid. What should you do?",
+    "options": [
+      "Ease off the gas and steer in the direction of the skid",
+      "Slam the brakes",
+      "Steer the opposite way and brake hard"
+    ],
+    "answer": "Ease off the gas and steer in the direction of the skid",
+    "explanation": "If you skid, take your foot off the accelerator and turn the steering wheel in the direction of the skid — never apply brakes while skidding.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 7 (Winter Driving)",
+      "page": 29,
+      "orc": null,
+      "quote": "If your vehicle starts to skid, take your foot off the accelerator and turn the steering wheel in the direction of the skid. Never apply brakes while skidding."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "work-zone-reduce-speed",
+    "topic": "Special Driving Situations",
+    "difficulty": "easy",
+    "type": "binary",
+    "question": "Should you reduce speed in a work zone even when no workers are present?",
+    "options": [
+      "Yes, always",
+      "No, only if workers are there"
+    ],
+    "answer": "Yes, always",
+    "explanation": "Always reduce your speed in a work zone, even if there are no workers — narrow lanes and rough pavement are hazardous.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 7 (Work Zones)",
+      "page": 29,
+      "orc": null,
+      "quote": "Always reduce your speed in a Work Zone, even if there are no workers."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "following-distance-4-seconds",
+    "topic": "Space Management",
+    "difficulty": "medium",
+    "type": "mc",
+    "question": "What's a good minimum following distance behind the vehicle ahead?",
+    "options": [
+      "About 4 seconds",
+      "1 second",
+      "Half a second"
+    ],
+    "answer": "About 4 seconds",
+    "explanation": "Keep at least one vehicle length per 10 mph, or about four seconds, between you and the vehicle ahead.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 8 (Space to the Front)",
+      "page": 31,
+      "orc": null,
+      "quote": "Always try to keep a minimum following distance of one vehicle length for every 10 miles per hour of travel, or four seconds between your vehicle and the vehicle ahead."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "increase-following-distance",
+    "topic": "Space Management",
+    "difficulty": "easy",
+    "type": "mc",
+    "question": "When should you increase your following distance?",
+    "options": [
+      "In rain, snow, fog, or at night",
+      "On a sunny, dry day",
+      "Never — 4 seconds is always enough"
+    ],
+    "answer": "In rain, snow, fog, or at night",
+    "explanation": "Increase following distance when visibility is limited (weather/night), on slippery roads, and behind large vehicles.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 8 (Space to the Front)",
+      "page": 31,
+      "orc": null,
+      "quote": "Increase your following distance when: Visibility is lessened or limited by the weather (fog, rain, snow, etc.), or at night."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "pedestrian-white-cane",
+    "topic": "Sharing the Road",
+    "difficulty": "medium",
+    "type": "binary",
+    "question": "A pedestrian with a white cane or guide dog is crossing. Do they have the right-of-way?",
+    "options": [
+      "Yes, always",
+      "Only at marked crosswalks"
+    ],
+    "answer": "Yes, always",
+    "explanation": "Pedestrians who are visually impaired or blind (white cane or guide dog) always have the right-of-way.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 9 (Pedestrians)",
+      "page": 34,
+      "orc": null,
+      "quote": "Pedestrians who are visually impaired or blind (carrying a white cane or using a guide dog) have the right-of-way."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "motorcycle-full-lane",
+    "topic": "Sharing the Road",
+    "difficulty": "medium",
+    "type": "binary",
+    "question": "Should you give a motorcyclist a full lane width?",
+    "options": [
+      "Yes",
+      "No, share the lane"
+    ],
+    "answer": "Yes",
+    "explanation": "Allow a motorcyclist a full lane width — they need the space to react to traffic and hazards.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 9 (Motorcyclists)",
+      "page": 34,
+      "orc": null,
+      "quote": "Allow a motorcyclist a full lane width; space is needed for the motorcyclist to react to other traffic."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "bicycle-three-feet",
+    "topic": "Sharing the Road",
+    "difficulty": "medium",
+    "type": "mc",
+    "question": "How much space must you leave when passing a bicyclist?",
+    "options": [
+      "At least 3 feet",
+      "At least 1 foot",
+      "At least 10 feet"
+    ],
+    "answer": "At least 3 feet",
+    "explanation": "Maintain a safety zone of at least three feet between your vehicle and a bicycle.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 9 (Bicyclists)",
+      "page": 35,
+      "orc": "ORC 4511.52",
+      "quote": "Maintain a safety zone of at least three feet between a motor vehicle and a bicycle."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "truck-blind-spot",
+    "topic": "Sharing the Road",
+    "difficulty": "medium",
+    "type": "mc",
+    "question": "How do you know if you're in a large truck's blind spot (“No Zone”)?",
+    "options": [
+      "If you can't see the driver's face in their mirror, they can't see you",
+      "If you're behind them by 10 feet",
+      "Trucks have no blind spots"
+    ],
+    "answer": "If you can't see the driver's face in their mirror, they can't see you",
+    "explanation": "Trucks have huge blind spots; if you can't see the driver's face in the truck's side mirror, the driver can't see you.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 9 (The No Zone)",
+      "page": 37,
+      "orc": null,
+      "quote": "If you cannot see the driver's face in the side-view mirror, the driver cannot see you."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "emergency-vehicle-pull-right",
+    "topic": "Sharing the Road",
+    "difficulty": "easy",
+    "type": "mc",
+    "question": "An emergency vehicle with lights and siren is approaching. What do you do?",
+    "options": [
+      "Pull to the right and stop",
+      "Speed up to get out of the way",
+      "Stop right where you are"
+    ],
+    "answer": "Pull to the right and stop",
+    "explanation": "Quickly and safely pull to the right side of the road and stop (avoid blocking intersections) until it passes.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 9 (Emergency Vehicles)",
+      "page": 38,
+      "orc": null,
+      "quote": "the driver must quickly — and safely — pull to the right side of the road and stop."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "move-over-law",
+    "topic": "Sharing the Road",
+    "difficulty": "medium",
+    "type": "mc",
+    "question": "You approach a stopped police car/tow truck with its lights flashing on the roadside. What does the Move Over law require?",
+    "options": [
+      "Change to a lane farther away, or slow down if you can't",
+      "Maintain speed and stay in your lane",
+      "Come to a complete stop in your lane"
+    ],
+    "answer": "Change to a lane farther away, or slow down if you can't",
+    "explanation": "Move to an adjacent lane away from the stopped vehicle when safe; if a lane change is unsafe, slow down and proceed with caution.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 9 (Move Over Laws)",
+      "page": 38,
+      "orc": null,
+      "quote": "Ohio law requires all drivers to move to an adjacent lane and/or slow down when approaching a stopped police vehicle, other emergency vehicle ..."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "slow-moving-emblem",
+    "topic": "Sharing the Road",
+    "difficulty": "medium",
+    "type": "mc",
+    "question": "An orange-and-red reflective triangle on the back of a vehicle means what?",
+    "options": [
+      "The vehicle travels under 25 mph",
+      "Wide load",
+      "Emergency vehicle"
+    ],
+    "answer": "The vehicle travels under 25 mph",
+    "explanation": "The fluorescent orange and red triangle marks a slow-moving vehicle traveling less than 25 mph.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 9 (Slow Moving Vehicles)",
+      "page": 38,
+      "orc": "ORC 4511.31",
+      "quote": "A fluorescent or reflective orange and red triangle displayed on the rear of vehicles ... means the vehicle is traveling less than 25 mph."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "brake-failure",
+    "topic": "Emergencies",
+    "difficulty": "medium",
+    "type": "mc",
+    "question": "Your brakes fail while driving. What's your first move?",
+    "options": [
+      "Use the parking brake (slowly)",
+      "Turn off the engine immediately",
+      "Jump out of the car"
+    ],
+    "answer": "Use the parking brake (slowly)",
+    "explanation": "Apply the parking brake slowly so you don't lock the rear wheels; if that fails, turn off the engine, pull off the road, and use flashers.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 10 (Brake Failure)",
+      "page": 40,
+      "orc": null,
+      "quote": "Use the parking brake - pull on the parking brake handle ... slowly so you will not lock the rear wheels and cause a skid."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "tire-blowout",
+    "topic": "Emergencies",
+    "difficulty": "medium",
+    "type": "mc",
+    "question": "A tire blows out at speed. What should you do?",
+    "options": [
+      "Grip the wheel, keep straight, don't brake — slow down gradually",
+      "Brake hard immediately",
+      "Jerk the wheel toward the shoulder"
+    ],
+    "answer": "Grip the wheel, keep straight, don't brake — slow down gradually",
+    "explanation": "Hold the wheel firmly to keep going straight, do not brake, slow down gradually, then pull off safely.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 10 (Tire Blowout)",
+      "page": 40,
+      "orc": null,
+      "quote": "Grip the steering wheel firmly and keep the vehicle going straight. Do not brake; slow down gradually."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "crash-must-stop",
+    "topic": "Emergencies",
+    "difficulty": "easy",
+    "type": "binary",
+    "question": "After a crash, can you leave once you've checked your car?",
+    "options": [
+      "No — stay, exchange info, and help/injured first",
+      "Yes, if your car still drives"
+    ],
+    "answer": "No — stay, exchange info, and help/injured first",
+    "explanation": "Stay at the scene: turn on hazards, check for injuries and call 911 if needed, and exchange contact and insurance information before leaving.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 10 (In the Event of a Crash)",
+      "page": 41,
+      "orc": "ORC 4549.02",
+      "quote": "Do not leave the scene until you have exchanged contact and insurance information with those involved"
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "tipic-16-17-curfew",
+    "topic": "Getting Your License",
+    "difficulty": "medium",
+    "type": "mc",
+    "question": "On a permit at age 16–17, who must be with you to drive between midnight and 6 a.m.?",
+    "options": [
+      "A parent, guardian, or custodian",
+      "Any licensed driver 21+",
+      "No one"
+    ],
+    "answer": "A parent, guardian, or custodian",
+    "explanation": "At 16–17 you may drive with any licensed driver 21+ — except midnight to 6 a.m., when you must be with a parent, guardian, or custodian who holds a valid license.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 1 (TIPIC Restrictions)",
+      "page": 2,
+      "orc": "ORC 4507.05",
+      "quote": "Age 16 to 17: ... except from midnight to 6 a.m. when the driver must be accompanied by a parent, guardian, or custodian who holds a valid Driver License."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "tipic-hold-six-months",
+    "topic": "Getting Your License",
+    "difficulty": "medium",
+    "type": "mc",
+    "question": "If you're under 18, how long must you hold your permit (TIPIC) before getting your license?",
+    "options": [
+      "At least 6 months",
+      "At least 30 days",
+      "At least 1 year"
+    ],
+    "answer": "At least 6 months",
+    "explanation": "Drivers under 18 must hold the TIPIC for at least six months.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 1 (Driver Education Requirements Under 21)",
+      "page": 3,
+      "orc": null,
+      "quote": "Hold the TIPIC for at least six months. (Applicable to drivers under age 18 ONLY.)"
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "tire-tread-depth",
+    "topic": "Before You Drive",
+    "difficulty": "hard",
+    "type": "mc",
+    "question": "What is the minimum safe tire tread depth?",
+    "options": [
+      "1/16 inch",
+      "1/2 inch",
+      "1/4 inch"
+    ],
+    "answer": "1/16 inch",
+    "explanation": "A safe tire has a minimum of 1/16-inch tread depth and no major bumps, bulges, or damage.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 2 (Tire Safety)",
+      "page": 5,
+      "orc": null,
+      "quote": "A tire in safe condition has a minimum of 1/16-inch tread depth on the road surface"
+    },
+    "verified": true,
+    "needs_human_review": false,
+    "human_verified": true
+  },
+  {
+    "id": "aggressive-driving-def",
+    "topic": "Be Alert",
+    "difficulty": "easy",
+    "type": "mc",
+    "question": "Which of these is an example of aggressive driving?",
+    "options": [
+      "Following too closely / tailgating",
+      "Signaling early",
+      "Keeping a space cushion"
+    ],
+    "answer": "Following too closely / tailgating",
+    "explanation": "Aggressive driving includes speeding, following too closely, unsafe lane changes, improper signaling, and disobeying signals/signs.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 3 (Aggressive Driving)",
+      "page": 7,
+      "orc": null,
+      "quote": "Aggressive driving examples are speeding, following too closely, unsafe lane changes, improper signaling, and failing to obey traffic signals and warnings signs."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "adult-handheld-illegal",
+    "topic": "Be Alert",
+    "difficulty": "medium",
+    "type": "binary",
+    "question": "If you're 18+, is it legal to hold your phone in your hand while driving in Ohio?",
+    "options": [
+      "No — hands-free only",
+      "Yes, holding it is fine"
+    ],
+    "answer": "No — hands-free only",
+    "explanation": "For drivers 18+, it's illegal in most cases to hold or physically support a phone while driving; you may use hands-free with a single touch or swipe.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 3 (Distracted Driving)",
+      "page": 8,
+      "orc": null,
+      "quote": "It is illegal in most cases to use, hold, or physically support a cell phone or electronic wireless communications device while driving on Ohio roads."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "changing-lanes-blindspot",
+    "topic": "Lane Travel",
+    "difficulty": "medium",
+    "type": "mc",
+    "question": "Before changing lanes, how do you check your blind spot?",
+    "options": [
+      "Turn your head and look over your shoulder",
+      "Just glance at the mirrors",
+      "Honk and go"
+    ],
+    "answer": "Turn your head and look over your shoulder",
+    "explanation": "Check mirrors AND blind spots by turning your head and looking over your shoulder in the direction you plan to move — mirrors alone don't show blind spots.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 5 (Changing Lanes)",
+      "page": 19,
+      "orc": null,
+      "quote": "Check your mirrors and “blind spots” ... by turning your head and looking over your shoulder in the direction you plan to move."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "merging-acceleration-lane",
+    "topic": "Lane Travel",
+    "difficulty": "medium",
+    "type": "mc",
+    "question": "How should you merge onto a freeway?",
+    "options": [
+      "Use the acceleration lane to match traffic speed, then merge",
+      "Stop at the end of the ramp and wait",
+      "Merge slowly and let traffic adjust"
+    ],
+    "answer": "Use the acceleration lane to match traffic speed, then merge",
+    "explanation": "Signal, check over your shoulder, and use the acceleration lane to reach the speed of traffic before merging into the flow.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 5 (Entering a Multi-Lane Highway)",
+      "page": 19,
+      "orc": null,
+      "quote": "use the acceleration lane to reach the speed of other vehicles to merge with the traffic flow."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "backing-up-look-rear",
+    "topic": "Learning to Drive",
+    "difficulty": "easy",
+    "type": "binary",
+    "question": "When backing up, should you turn and look through the rear window?",
+    "options": [
+      "Yes — look directly through the rear window",
+      "No — the mirrors/camera are enough"
+    ],
+    "answer": "Yes — look directly through the rear window",
+    "explanation": "Look directly through the rear window when backing; mirrors and cameras don't show the area immediately behind the vehicle.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 5 (Backing Up)",
+      "page": 16,
+      "orc": null,
+      "quote": "look directly through the rear window. Use your mirrors for backing up but keep in mind that these mirrors do not show the area immediately behind your vehicle."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "insurance-minimums",
+    "topic": "Insurance & Penalties",
+    "difficulty": "hard",
+    "type": "mc",
+    "question": "What are Ohio's minimum liability insurance limits (one person / two+ people / property)?",
+    "options": [
+      "$25,000 / $50,000 / $25,000",
+      "$15,000 / $30,000 / $10,000",
+      "$50,000 / $100,000 / $50,000"
+    ],
+    "answer": "$25,000 / $50,000 / $25,000",
+    "explanation": "Minimum liability: $25,000 for injury/death of one person, $50,000 for two or more, and $25,000 for property damage.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 6 (Insurance — Financial Responsibility)",
+      "page": 24,
+      "orc": "ORC 4509.101",
+      "quote": "$25,000 for injury/death of one person, and $50,000 for injury/death of two or more people, and $25,000 for property damage in an accident"
+    },
+    "verified": true,
+    "needs_human_review": false,
+    "human_verified": true
+  },
+  {
+    "id": "als-first-refusal",
+    "topic": "Insurance & Penalties",
+    "difficulty": "hard",
+    "type": "mc",
+    "question": "If you refuse a chemical (BAC) test the first time, how long is the Administrative License Suspension?",
+    "options": [
+      "One year",
+      "30 days",
+      "Five years"
+    ],
+    "answer": "One year",
+    "explanation": "A first refusal to test brings a one-year license suspension (longer with prior refusals/OVI convictions).",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 6 (Alcohol and Drug Penalties)",
+      "page": 25,
+      "orc": null,
+      "quote": "First Refusal – One year license suspension"
+    },
+    "verified": true,
+    "needs_human_review": false,
+    "human_verified": true
+  },
+  {
+    "id": "child-seat-under4",
+    "topic": "Child Passenger Safety",
+    "difficulty": "medium",
+    "type": "mc",
+    "question": "A child under age 4 AND under 40 pounds must ride in what?",
+    "options": [
+      "A child safety seat",
+      "A booster seat",
+      "Just a seat belt"
+    ],
+    "answer": "A child safety seat",
+    "explanation": "Children under age 4 and under 40 pounds must be restrained in a child safety seat meeting federal standards.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 6 (Child Passenger Restraints)",
+      "page": 27,
+      "orc": "ORC 4511.81",
+      "quote": "Infants and children who are either or both under age 4 and weighing less than 40 pounds must be properly restrained in a child safety seat"
+    },
+    "verified": true,
+    "needs_human_review": false,
+    "human_verified": true
+  },
+  {
+    "id": "child-booster-4to8",
+    "topic": "Child Passenger Safety",
+    "difficulty": "hard",
+    "type": "mc",
+    "question": "A child age 4 to under 8 (and under 4'9\") must ride in what?",
+    "options": [
+      "A booster seat",
+      "A rear-facing car seat",
+      "Just a seat belt"
+    ],
+    "answer": "A booster seat",
+    "explanation": "A child at least 4 but under 8 must be in a booster seat unless they are 4 feet 9 inches or taller.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 6 (Child Passenger Restraints)",
+      "page": 27,
+      "orc": "ORC 4511.81",
+      "quote": "is being transported in a motor vehicle, the vehicle operator shall have the child properly restrained in a booster seat unless the child is 4-foot 9-inches in height, or taller."
+    },
+    "verified": true,
+    "needs_human_review": false,
+    "human_verified": true
+  },
+  {
+    "id": "visual-search-ahead",
+    "topic": "Safe Driving",
+    "difficulty": "medium",
+    "type": "mc",
+    "question": "How far ahead should you ideally be looking as you drive?",
+    "options": [
+      "20 to 30 seconds ahead",
+      "2 to 3 seconds ahead",
+      "As far as the car in front"
+    ],
+    "answer": "20 to 30 seconds ahead",
+    "explanation": "Ideally look at what is occurring 20 to 30 seconds ahead of your car so you have time to react.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 8 (Visual Search)",
+      "page": 30,
+      "orc": null,
+      "quote": "try to look at what is occurring 20 to 30 seconds in front of your car."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "hydroplaning-ease-off",
+    "topic": "Safe Driving",
+    "difficulty": "medium",
+    "type": "mc",
+    "question": "If your car starts to hydroplane on water, what should you do?",
+    "options": [
+      "Slowly ease your foot off the gas",
+      "Brake hard",
+      "Steer sharply to one side"
+    ],
+    "answer": "Slowly ease your foot off the gas",
+    "explanation": "When hydroplaning, slowly ease off the gas pedal; the best prevention is slowing down in the rain.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 8 (Hydroplaning)",
+      "page": 30,
+      "orc": null,
+      "quote": "When hydroplaning, slowly ease your foot off the gas pedal."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "curve-slow-before",
+    "topic": "Safe Driving",
+    "difficulty": "easy",
+    "type": "binary",
+    "question": "Should you slow down BEFORE entering a curve?",
+    "options": [
+      "Yes",
+      "No — brake in the middle of the curve"
+    ],
+    "answer": "Yes",
+    "explanation": "Reduce speed before entering a curve so you can apply slight, constant acceleration through it.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 8 (Speed Management — Curves)",
+      "page": 30,
+      "orc": null,
+      "quote": "Before entering a curve, reduce speed to a safe speed that allows you to apply slight and constant acceleration through the curve."
+    },
+    "verified": true,
+    "needs_human_review": false
+  },
+  {
+    "id": "school-zone-flashing-lights",
+    "topic": "Speed Limits",
+    "difficulty": "medium",
+    "type": "mc",
+    "question": "When must you obey the slower school-zone speed limit?",
+    "options": [
+      "When lights are flashing or children are present",
+      "Only on weekdays",
+      "Only when a crossing guard waves you down"
+    ],
+    "answer": "When lights are flashing or children are present",
+    "explanation": "In school zones, obey the slower limit when the lights are flashing or children are present, and obey crossing guards.",
+    "source": {
+      "manual": "Ohio Driving manual.pdf",
+      "section": "Section 9 (Pedestrians — School Zones)",
+      "page": 34,
+      "orc": null,
+      "quote": "School Zones - When lights are flashing or children are present, you must obey a slower speed limit."
+    },
+    "verified": true,
+    "needs_human_review": false
+  }
+]

@@ -1,0 +1,195 @@
+/* Permit Bowl — broadcast-football styling. Mobile-first, dark, chunky. */
+:root{
+  --turf:#1c7a36; --turf2:#178031; --chalk:#f3fff7; --ink:#0b140e;
+  --gold:#ffce3a; --homecol:#1763c7; --awaycol:#c62a2a; --panel:#0f1d14; --line:#27412f;
+  --los:#2f7be0; --fd:#ffce3a;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{
+  background:var(--ink); color:var(--chalk);
+  font-family:"Trebuchet MS",Verdana,system-ui,sans-serif;
+  -webkit-text-size-adjust:100%;
+  display:flex; flex-direction:column; min-height:100%;
+  padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+
+/* ---------- Scoreboard ---------- */
+#scoreboard{display:flex;align-items:stretch;background:#08110b;border-bottom:3px solid #000}
+.team{display:flex;align-items:center;gap:10px;padding:8px 14px;flex:1;font-weight:800}
+.team-home{background:linear-gradient(180deg,var(--homecol),#114a96)}
+.team-away{background:linear-gradient(180deg,var(--awaycol),#8e1d1d);justify-content:flex-end}
+.team .abbr{font-size:15px;letter-spacing:1px}
+.team .pts{font-size:30px;line-height:1;font-variant-numeric:tabular-nums}
+.game-mid{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:4px 10px;background:#08110b;min-width:128px}
+#quarter{font-size:13px;font-weight:800;color:var(--gold);letter-spacing:1px}
+.poss{font-size:11px;font-weight:700;margin-top:2px;text-align:center;color:#cfe}
+
+/* ---------- Field ---------- */
+#field{display:flex;height:118px;border-bottom:3px solid #000}
+.endzone{flex:0 0 30px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:12px}
+.endzone span{writing-mode:vertical-rl;transform:rotate(180deg);letter-spacing:1px;opacity:.95}
+.ez-home{background:repeating-linear-gradient(45deg,var(--homecol),var(--homecol) 6px,#1257ad 6px,#1257ad 12px)}
+.ez-away{background:repeating-linear-gradient(45deg,var(--awaycol),var(--awaycol) 6px,#a82323 6px,#a82323 12px)}
+.ez-away span{transform:none}
+
+.turf{position:relative;flex:1;overflow:hidden;
+  background:repeating-linear-gradient(90deg,var(--turf) 0 10%,var(--turf2) 10% 20%)}
+#yardlines{position:absolute;inset:0}
+.yardline{position:absolute;top:0;bottom:0;width:2px;background:rgba(255,255,255,.55)}
+.yardnum{position:absolute;transform:translateX(-50%);
+  color:rgba(255,255,255,.85);font-weight:800;font-size:13px}
+.fifty{width:3px;background:#fff}
+
+.los-line{position:absolute;top:0;bottom:0;width:3px;background:var(--los);box-shadow:0 0 6px var(--los);transition:left .55s ease}
+.fd-line{position:absolute;top:0;bottom:0;width:3px;background:var(--fd);box-shadow:0 0 6px var(--fd);transition:left .55s ease}
+.down-marker{position:absolute;top:3px;transform:translateX(-50%);background:#e08a00;color:#111;font-weight:900;font-size:11px;min-width:16px;height:16px;line-height:16px;text-align:center;border-radius:3px;transition:left .55s ease;z-index:2;box-shadow:0 1px 2px rgba(0,0,0,.5)}
+.fd-tag{position:absolute;top:3px;transform:translateX(-50%);background:var(--fd);color:#111;font-weight:900;font-size:10px;padding:1px 4px;border-radius:3px;transition:left .55s ease;z-index:2}
+.ball{position:absolute;top:50%;transform:translate(-50%,-50%);font-size:22px;transition:left .55s ease;z-index:2;filter:drop-shadow(0 2px 2px rgba(0,0,0,.5))}
+.ball.flip{transform:translate(-50%,-50%) scaleX(-1)}
+.ball.running{animation:runbob .2s ease-in-out infinite}
+@keyframes runbob{0%,100%{margin-top:0}50%{margin-top:-5px}}
+
+/* on-field FX (juice) */
+.fx{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;
+  font-weight:900;font-size:30px;color:#fff;text-shadow:0 2px 8px #000,0 0 12px rgba(0,0,0,.6);opacity:0;z-index:3;text-align:center}
+.fx.show{animation:fxpop 1.1s ease forwards}
+@keyframes fxpop{0%{opacity:0;transform:scale(.5)}18%{opacity:1;transform:scale(1.12)}78%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(1.04)}}
+.turf.td{animation:tdflash .85s ease}
+@keyframes tdflash{0%,100%{filter:none}35%{filter:brightness(1.9) saturate(1.4)}}
+.turf.shake{animation:shake .42s}
+@keyframes shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-5px)}40%{transform:translateX(5px)}60%{transform:translateX(-4px)}80%{transform:translateX(3px)}}
+.turf.fd{box-shadow:inset 0 0 0 3px var(--fd)}
+
+/* ---------- Status bar ---------- */
+#statusbar{display:flex;align-items:center;gap:12px;padding:7px 14px;background:#0e1a12;font-weight:700;font-size:14px;color:#bfe}
+#statusbar #spot{opacity:.8;font-size:13px}
+.ovr-mini{margin-left:auto;background:var(--gold);color:#222;border-radius:7px;padding:3px 9px;font-weight:800}
+.ovr-mini b{font-size:16px}
+.end-btn{background:#2a2a2a;color:#ddd;border:2px solid #444;border-radius:8px;padding:5px 10px;font-weight:700}
+
+/* ---------- Stage / play ---------- */
+#stage{flex:1;padding:18px 16px 26px;display:flex;flex-direction:column;justify-content:center;max-width:560px;margin:0 auto;width:100%}
+.loading{text-align:center;opacity:.6}
+.q{font-size:21px;font-weight:800;line-height:1.3;margin:0 0 16px;text-align:center}
+.sign{display:block;max-width:150px;max-height:130px;margin:0 auto 16px;background:#fff;border-radius:8px;padding:6px}
+
+.phase{text-align:center;font-weight:800;font-size:13px;letter-spacing:1px;margin-bottom:10px;padding:5px;border-radius:8px}
+.phase.off{background:rgba(23,99,199,.25);color:#9ec6ff;border:1px solid var(--homecol)}
+.phase.def{background:rgba(198,42,42,.22);color:#ff9b9b;border:1px solid var(--awaycol)}
+
+.options{display:flex;flex-direction:column;gap:10px}
+.opt{font-size:17px;font-weight:700;padding:15px 14px;border-radius:12px;border:3px solid var(--line);
+  background:#16271d;color:var(--chalk);text-align:left;cursor:pointer;transition:transform .05s}
+.opt:active{transform:scale(.98)}
+.opt.right{background:#2bbd63;border-color:#1f9b52;color:#06210f}
+.opt.wrong{background:var(--awaycol);border-color:#a82626}
+
+.scouting{background:#10261a;border:3px dashed var(--gold);border-radius:14px;padding:18px;text-align:center}
+.scouting-tag{color:var(--gold);font-weight:800;letter-spacing:1px;font-size:13px;margin-bottom:8px}
+.answer-reveal{font-size:18px;margin:6px 0;color:#2bbd63}
+.explain{font-size:14px;opacity:.9;line-height:1.4}
+
+.result{text-align:center}
+.result .banner{font-size:24px;font-weight:900;letter-spacing:1px}
+.result.good .banner{color:#2bbd63}
+.result.bad .banner{color:#ff6a6a}
+.result .yards{font-size:40px;font-weight:900;margin:6px 0}
+.result .event{font-size:18px;font-weight:800;color:var(--gold);margin-bottom:8px}
+.coaching{font-size:14px;background:#10261a;border:2px solid var(--line);border-radius:10px;padding:10px;line-height:1.4;text-align:left}
+
+/* Opponent (defense) drive */
+.defense{text-align:center}
+.defense .tag{font-size:22px;font-weight:900;color:var(--awaycol)}
+.defense .sub{opacity:.85;margin-top:6px}
+.defense .pbp{margin-top:14px;font-size:16px;font-weight:700;min-height:24px}
+
+.hike{margin-top:16px;font-size:18px;font-weight:800;padding:14px 20px;border:none;border-radius:12px;
+  background:var(--gold);color:#222;cursor:pointer;width:100%}
+.hike:active{transform:scale(.98)}
+
+/* Summary overlay */
+#summary{position:fixed;inset:0;background:rgba(0,0,0,.82);display:flex;align-items:center;justify-content:center;padding:20px;z-index:10}
+#summary[hidden]{display:none}
+.summary-card{background:var(--panel);border:3px solid var(--gold);border-radius:16px;padding:22px;max-width:380px;width:100%}
+.summary-card h2{margin:0 0 12px;text-align:center}
+.statline{list-style:none;padding:0;margin:0 0 14px}
+.statline li{display:flex;justify-content:space-between;padding:8px 4px;border-bottom:1px solid var(--line)}
+.statline b{color:var(--gold)}
+.ovr-final{text-align:center;font-size:15px}
+
+/* ---------- Home base ---------- */
+body.home #scoreboard, body.home #field, body.home #statusbar, body.home #stage, body.home #summary{display:none !important}
+body.playing #home{display:none}
+#home{flex:1;display:flex;align-items:center;justify-content:center;padding:20px}
+.home-card{background:var(--panel);border:3px solid var(--line);border-radius:18px;padding:26px 22px;max-width:380px;width:100%;text-align:center}
+.logo{font-size:14px;font-weight:900;letter-spacing:2px;color:var(--gold);margin-bottom:14px}
+.team-banner{background:var(--homecol);color:#fff;font-weight:900;font-size:24px;letter-spacing:1px;padding:16px;border-radius:12px;margin-bottom:16px;box-shadow:inset 0 -4px rgba(0,0,0,.25)}
+.home-stats{display:flex;justify-content:space-around;margin-bottom:20px}
+.hs{display:flex;flex-direction:column}
+.hs b{font-size:24px;color:var(--gold)}
+.hs span{font-size:11px;opacity:.8;letter-spacing:.5px}
+.ghost-btn{margin-top:10px;background:transparent;color:#9fb;border:2px solid var(--line);border-radius:10px;padding:10px;font-weight:700;width:100%}
+#settings{margin-top:16px;text-align:left;border-top:1px solid var(--line);padding-top:14px}
+#settings[hidden]{display:none}
+.fld{display:flex;flex-direction:column;font-size:13px;font-weight:700;gap:6px;margin-bottom:12px}
+.fld input{font-size:16px;padding:10px;border-radius:8px;border:2px solid var(--line);background:#0e1a12;color:var(--chalk)}
+.swatch-label{font-size:13px;font-weight:700;margin-bottom:6px}
+.swatches{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+.swatch{width:38px;height:38px;border-radius:50%;border:3px solid transparent;cursor:pointer}
+.swatch.sel{box-shadow:0 0 0 2px var(--ink),0 0 0 4px #fff}
+
+/* ---------- Roster / My Team ---------- */
+#roster{position:fixed;inset:0;background:rgba(0,0,0,.85);display:flex;align-items:center;justify-content:center;padding:16px;z-index:11}
+#roster[hidden]{display:none}
+.roster-card{background:var(--panel);border:3px solid var(--gold);border-radius:16px;padding:18px;max-width:420px;width:100%;max-height:90vh;display:flex;flex-direction:column}
+.roster-head{display:flex;justify-content:space-between;align-items:center;font-weight:900;font-size:16px;letter-spacing:1px}
+.roster-head .team-ovr b{color:var(--gold);font-size:22px}
+.roster-sub{font-size:12px;opacity:.8;margin:6px 0 12px}
+.roster-list{overflow-y:auto;flex:1;display:flex;flex-direction:column;gap:8px}
+.player{display:flex;align-items:center;gap:10px;background:#16271d;border:2px solid var(--line);border-radius:10px;padding:8px 10px}
+.p-ovr{background:var(--gold);color:#111;font-weight:900;font-size:16px;min-width:34px;height:34px;border-radius:7px;display:flex;align-items:center;justify-content:center}
+.p-info{flex:1;min-width:0}
+.p-name{font-weight:700;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.p-bar{height:6px;background:#0c1a12;border-radius:4px;margin-top:5px;overflow:hidden}
+.p-bar span{display:block;height:100%;background:var(--green)}
+.p-count{font-size:12px;opacity:.85;font-weight:700;white-space:nowrap}
+.roster-card .hike{margin-top:12px}
+#locker{position:fixed;inset:0;background:rgba(0,0,0,.85);display:flex;align-items:center;justify-content:center;padding:16px;z-index:11}
+#locker[hidden]{display:none}
+.p-sub{font-size:11px;opacity:.85;margin-top:3px;letter-spacing:1px}
+.buy-btn{background:var(--gold);color:#111;font-weight:800;border:none;border-radius:8px;padding:9px 12px;font-size:13px;white-space:nowrap;cursor:pointer}
+.buy-btn:disabled{background:#3a3a3a;color:#8a8a8a;cursor:default}
+
+/* ---- play-calling (pre-snap) ---- */
+.playcall, .fourth { display: flex; flex-direction: column; gap: 12px; }
+.pc-grid { display: grid; gap: 10px; }
+.pc-btn {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 2px;
+  padding: 16px 18px; border: 0; border-radius: 14px; cursor: pointer;
+  color: #fff; text-align: left; font: inherit;
+  background: #243; box-shadow: 0 3px 0 rgba(0,0,0,.35); transition: transform .06s ease;
+}
+.pc-btn:active { transform: translateY(2px); box-shadow: 0 1px 0 rgba(0,0,0,.35); }
+.pc-btn:disabled { opacity: .45; cursor: not-allowed; box-shadow: none; }
+.pc-label { font-size: 20px; font-weight: 900; letter-spacing: .5px; }
+.pc-sub { font-size: 13px; opacity: .85; }
+.pc-run   { background: linear-gradient(135deg,#0b8a3e,#0a6e32); }
+.pc-short { background: linear-gradient(135deg,#1763c7,#114e9e); }
+.pc-bomb  { background: linear-gradient(135deg,#c62a2a,#9e1f1f); }
+.pc-punt  { background: linear-gradient(135deg,#555,#3a3a3a); }
+.pc-go    { background: linear-gradient(135deg,#e08a00,#b06d00); }
+.pc-fg    { background: linear-gradient(135deg,#127a86,#0d5b64); }
+
+/* ---- PAT mini-game ---- */
+.pat { display: flex; flex-direction: column; gap: 12px; align-items: center; }
+.pat .pc-grid { width: 100%; }
+.uprights { position: relative; width: 140px; height: 84px; margin: 6px auto; }
+.uprights .post { position: absolute; bottom: 0; width: 6px; height: 70px; background: var(--gold, #f5c518); border-radius: 3px; }
+.uprights .post.l { left: 34px; } .uprights .post.r { right: 34px; }
+.uprights .bar { position: absolute; bottom: 56px; left: 34px; right: 34px; height: 6px; background: var(--gold, #f5c518); border-radius: 3px; }
+.kickball { position: absolute; left: 50%; bottom: 0; font-size: 22px; transform: translateX(-50%); }
+.kickball.good { animation: kick-good .9s ease-out forwards; }
+.kickball.miss { animation: kick-miss .9s ease-in forwards; }
+@keyframes kick-good { 0%{bottom:0;opacity:1} 70%{bottom:70px;transform:translateX(-50%) scale(.7)} 100%{bottom:96px;transform:translateX(-50%) scale(.5);opacity:.9} }
+@keyframes kick-miss { 0%{bottom:0;left:50%;opacity:1} 100%{bottom:64px;left:88%;transform:translateX(-50%) scale(.6) rotate(40deg);opacity:.7} }
