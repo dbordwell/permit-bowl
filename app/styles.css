@@ -193,3 +193,7 @@ body.playing #home{display:none}
 .kickball.miss { animation: kick-miss .9s ease-in forwards; }
 @keyframes kick-good { 0%{bottom:0;opacity:1} 70%{bottom:70px;transform:translateX(-50%) scale(.7)} 100%{bottom:96px;transform:translateX(-50%) scale(.5);opacity:.9} }
 @keyframes kick-miss { 0%{bottom:0;left:50%;opacity:1} 100%{bottom:64px;left:88%;transform:translateX(-50%) scale(.6) rotate(40deg);opacity:.7} }
+
+/* ---- defensive schemes ---- */
+.pc-blitz { background: linear-gradient(135deg,#c62a2a,#7a1414); }
+.pc-zone  { background: linear-gradient(135deg,#127a86,#0d5b64); }

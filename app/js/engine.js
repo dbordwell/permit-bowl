@@ -38,7 +38,7 @@ export function resolvePlay(success, { boost = 0, playType = null, rng = Math.ra
     if (idx >= 0) { while (idx < order.length - 1 && rng() < boost) idx++; tier = order[idx]; }
   }
   const [lo, hi] = O.tiers[tier];
-  return { tier, label: O.labels[tier], yards: randInt(lo, hi, rng), turnover: tier === 'intercept' };
+  return { tier, label: O.labels[tier], yards: randInt(lo, hi, rng), turnover: tier === 'intercept' || tier === 'fumble' };
 }
 
 // ---- game state ----

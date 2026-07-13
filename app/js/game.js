@@ -20,6 +20,7 @@ const COLORS = CONFIG.teamColors;
 const DEFAULT_PROFILE = { teamName: 'HOME', color: CONFIG.teamColors[0] };
 const CELEB = CONFIG.celebrations;
 const PLAYTYPES = CONFIG.playTypes;
+const DEFENSETYPES = CONFIG.defenseTypes;
 const pickOne = (a) => a[Math.floor(Math.random() * a.length)];
 
 let deck, game, current, session, profile;
@@ -247,10 +248,7 @@ function nextPlay() {
   if (session.plays >= GAME_PLAYS) return endGame(false);
   if (onOffense() && game.down === 4) return fourthDownDecision();
   if (onOffense()) return callPlay();
-  current = deck.next();
-  current.playType = null;
-  current.typeKey = null;
-  presentCard();
+  return callDefense();
 }
 
 // Pre-snap: three buttons. One tap calls the play and snaps the ball.
@@ -275,6 +273,34 @@ function choosePlay(key) {
   const pt = PLAYTYPES[key];
   current = deck.next(pt.diff);   // soft difficulty preference (due cards still served)
   current.playType = pt;
+  current.defenseType = null;
+  current.typeKey = key;
+  presentCard();
+}
+
+// Pre-snap on defense: pick a scheme, then face the rival's play (the card).
+function callDefense() {
+  $('stage').innerHTML = `
+    <div class="playcall">
+      <div class="phase def">🛡️ ON DEFENSE — ${esc(downText(game))} · call your D</div>
+      <div class="pc-grid">
+        ${Object.values(DEFENSETYPES).map(dt => `
+          <button class="pc-btn pc-${dt.key}" data-key="${dt.key}">
+            <span class="pc-label">${dt.label}</span>
+            <span class="pc-sub">${esc(dt.sub)}</span>
+          </button>`).join('')}
+      </div>
+    </div>`;
+  for (const b of document.querySelectorAll('.pc-btn')) {
+    b.addEventListener('click', () => chooseDefense(b.dataset.key));
+  }
+}
+
+function chooseDefense(key) {
+  const dt = DEFENSETYPES[key];
+  current = deck.next(dt.diff);
+  current.playType = null;
+  current.defenseType = dt;
   current.typeKey = key;
   presentCard();
 }
@@ -284,7 +310,7 @@ function presentCard() {
   const card = current.card;
   const tag = onOffense()
     ? `<div class="phase off">🏈 OFFENSE — ${esc(current.playType ? current.playType.label : 'move the ball')}</div>`
-    : `<div class="phase def">🛡️ DEFENSE — get a stop</div>`;
+    : `<div class="phase def">🛡️ DEFENSE — ${esc(current.defenseType ? current.defenseType.label : 'get a stop')}</div>`;
 
   if (current.isNew) {
     $('stage').innerHTML = `
@@ -443,9 +469,9 @@ function answer(card, choice, btn) {
   // Player upgrades only make YOUR good plays bigger (offense). Never affects failures.
   const boost = offense ? Math.min(0.6, ((career.upgrades.speed || 0) + (career.upgrades.power || 0)) * 0.1) : 0;
   // On defense the opponent's play is the inverse of his answer: he's right -> they're stuffed.
-  const play = resolvePlay(offense ? correct : !correct, { boost, playType: offense ? current.playType : null });
-  // An interception (bomb gone wrong) is an immediate turnover regardless of down.
-  const event = (offense && play.turnover) ? 'turnover' : advance(game, play.yards);
+  const play = resolvePlay(offense ? correct : !correct, { boost, playType: offense ? current.playType : current.defenseType });
+  // A turnover (offense interception OR defensive forced fumble) flips possession regardless of down.
+  const event = play.turnover ? 'turnover' : advance(game, play.yards);
 
   session.plays++; career.plays++;
   if (correct) { session.correct++; career.correct++; career.tokens = (career.tokens || 0) + 1; } // 1 token per right answer
@@ -493,7 +519,7 @@ function showResult({ card, correct, offense, play, event }) {
     banner = correct ? '🛡️ ' + play.label : '😱 ' + TEAMS.away.abbr + ' ' + play.label;
     yardsTxt = correct ? `${TEAMS.away.abbr} held to ${play.yards}` : `${TEAMS.away.abbr} gain +${play.yards}`;
     eventTxt = { touchdown: `💢 ${TEAMS.away.abbr} TOUCHDOWN`, first_down: `${TEAMS.away.abbr} first down`,
-                 turnover: '🚨 STOP ON DOWNS — YOUR BALL!', play: '' }[event];
+                 turnover: play.turnover ? '💥 FORCED FUMBLE — TAKEAWAY!' : '🚨 STOP ON DOWNS — YOUR BALL!', play: '' }[event];
   }
   const coaching = correct ? ''
     : `<p class="coaching">✅ Correct answer: <b>${esc(card.answer)}</b><br>${esc(card.explanation)}</p>`;

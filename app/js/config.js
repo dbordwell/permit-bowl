@@ -40,8 +40,8 @@ export const CONFIG = {
     success: { short: 0.55, big: 0.32, breakaway: 0.13 }, // right answer (always a gain)
     fail:    { sack: 0.55, nogain: 0.45 },                 // wrong answer (never a gain)
     // yard ranges for each result [min, max]:
-    tiers: { sack: [-6, -1], nogain: [0, 0], incomplete: [0, 0], intercept: [0, 0], short: [3, 8], big: [9, 20], breakaway: [21, 40] },
-    labels: { sack: 'SACKED', nogain: 'STOPPED', incomplete: 'INCOMPLETE', intercept: 'INTERCEPTED', short: 'NICE GAIN', big: 'BIG GAIN', breakaway: 'BREAKAWAY!' },
+    tiers: { sack: [-6, -1], nogain: [0, 0], incomplete: [0, 0], intercept: [0, 0], fumble: [0, 0], short: [3, 8], big: [9, 20], breakaway: [21, 40] },
+    labels: { sack: 'SACKED', nogain: 'STOPPED', incomplete: 'INCOMPLETE', intercept: 'INTERCEPTED', fumble: 'FUMBLE!', short: 'NICE GAIN', big: 'BIG GAIN', breakaway: 'BREAKAWAY!' },
   },
 
   // 🏈 PRE-SNAP PLAY CALLS — he picks one each offensive down; the play sets the STAKES.
@@ -65,4 +65,15 @@ export const CONFIG = {
 
   // Point-after-touchdown: a TD is 6, then he picks the extra point.
   pat: { kickPoints: 1, twoPoints: 2, kickDiff: 'easy', twoDiff: 'hard' },
+
+  // 🛡️ DEFENSIVE PLAY CALLS — on defense he picks a scheme; it sets the STAKES of the rival's play.
+  // `success` = what the OPPONENT does when he MISSES (they gain); `fail` = when he STOPS them (right).
+  defenseTypes: {
+    blitz: { key: 'blitz', label: '🔻 BLITZ', sub: 'Bring the house — sack or big play', diff: 'hard',
+             success: { short: 0.25, big: 0.40, breakaway: 0.35 },  // beaten -> a big rival gain
+             fail:    { sack: 0.50, fumble: 0.20, nogain: 0.30 } }, // stuffed -> TFL, chance of a takeaway
+    zone:  { key: 'zone',  label: '🛡️ ZONE',  sub: 'Bend, don’t break', diff: 'easy',
+             success: { short: 0.70, big: 0.28, breakaway: 0.02 },  // gives up yards but rarely a bomb
+             fail:    { nogain: 0.55, sack: 0.45 } },               // safe stop
+  },
 };
